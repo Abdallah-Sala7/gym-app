@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GYM</title>
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="info.css">
-    <title>GYM</title>
 </head>
 <body>
     <div class="info-page section">
         <div class="container">
             <form >
-                <input 
-                    type="file" 
-                    name="user-image" 
-                    id="" 
-                    required
-                >
+                <div class="upload-photo">
+                    <img src="./img/new-img.jpg" alt="" >
+                    <input 
+                        type="file" 
+                        name="user-image" 
+                        id="" 
+                        required
+                    >                    
+                </div>
+
                 <input 
                     type="text"
                     placeholder="Name" 
@@ -39,7 +45,24 @@
                     placeholder="Phone Number" 
                     required
                 >
-                <input type="submit" class="submit" value="ok" src="index.html">
+                <div class="payment">
+                    <div class="title">
+                        <h4>Add new card: </h4>
+                        <div class="icon">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>                            
+                        </div>
+
+                    </div>
+                    <input type="text" placeholder="Card holder name">
+                    <div class="visa-info">
+                        <input type="number" class="card-number" placeholder="Card number">
+                        <input type="text" class="cvv" placeholder="Exp date">
+                        <input type="text" class="cvv" placeholder="CVV">
+                    </div>
+
+                </div>
+                <input type="submit" class="submit" value="ok" >
                 
             </form>
         </div>

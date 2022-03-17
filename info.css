@@ -3,14 +3,18 @@ body{
 }
 .info-page{
     color: #222;
-    height: 100vh;
+    min-height: 100vh;
+}
+.info-page.section{
+    padding: 50px 0;
+
 }
 
 form {
     display: flex;
     flex-direction: column;
-    width: 400px;
-    height: 100%;
+    width: 98%;
+    min-height: 100%;
     border-radius: 8px;
     background-color: #fff;
     padding-top: 40px;
@@ -22,32 +26,79 @@ form {
 input{
     margin-bottom: 20px;
     outline: none;
-    width: 300px;
+    width: 80%;
     padding: 8px;
     border: none;
     border-bottom: 1px solid rgb(0 0 0 / 30%);
 }
+.upload-photo{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
 
 input[type="file"] {
-    color: transparent;
-    width: 100px;
-    height: 100px;
-    padding: 0;
-    border: none;
-    border-radius: 50%;
     cursor: n-resize;
-    position: relative;
-}
-input[type="file"]::before{
     position: absolute;
-    content: '';
     top: 0;
-    right: 0;
-    background-image: url(./img/cardio.jpg);
-    width: 100px;
-    height: 100px;
-    background-position: center;
-    background-size: cover;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: transparent;
+
+}
+.upload-photo img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.payment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 80%;
+}
+.payment .title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0; 
+}
+.payment input{
+    width: 100%;
+}
+.payment .title h4{
+    margin-right: 30px;
+}
+.payment .title i{
+    margin-right: 10px;
+    font-size: 25px;
+    color: #1434cb;
+}
+.payment .title i:last-of-type{
+    color: #221e1f;
+}
+.payment .visa-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.payment .visa-info .card-number{
+    width: 48%;
+}
+.payment .visa-info .cvv{
+    width: 22%;
 }
 .submit {
     width: 250px;
@@ -60,4 +111,22 @@ input[type="file"]::before{
     border-radius: 30px;
     font-size: 20px;
     cursor: pointer;
+}
+
+@media (min-width: 768px){
+    form {
+        width: 400px;
+    }
+    input{
+        width: 300px;
+    }
+    
+    .upload-photo{
+        width: 120px;
+        height: 120px;
+    }
+
+    .payment .visa-info{
+        width: 300px;
+    }
 }
