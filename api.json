@@ -1,0 +1,40 @@
+[
+    {
+        "id":1,
+        "name":"Abdallah",
+        "job":"Frontend developer ",
+        "text":"I want to express my sincere gratitude for the personal training from Fitney have provided me over the past 3 years. I have achieved from our many hours in the gym working on building strength, muscle growth while learning the proper form and technique in weight lifting  and overal good health",
+        "img":"./img/man1.jpg",
+        "active":"active",
+        "rate":5
+
+    },
+    {
+        "id":2,
+        "name":"Mohamed",
+        "job":"Bussinessman",
+        "text":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi voluptatibus amet excepturi minima nobis quos! Dignissimos tempore facere sapiente optio. Culpa ullam dicta dolores quis, iusto ex excepturi commodi laudantium! ",
+        "rate":4,
+        "img":"./img/man2.jpg",
+        "active":""
+    },
+    {
+        "id":3,
+        "name":"Ahmed",
+        "job":"Frontend devloper ",
+        "text":"I want to express my sincere gratitude for the personal training from Fitney have provided me over the past 3 years. I have achieved from our many hours in the gym working on building strength, muscle growth while learning the proper form and technique in weight lifting  and overal good health",
+        "img":"./img/man3.jpg",
+        "active":"",
+        "rate":2 
+
+    },
+    {
+        "id":4,
+        "name":"Omar",
+        "job":"IT developer",
+        "text":"Thank you for this great service. This place is one of the best places in the world. It offers bodybuilding services. Here are the best trainers in Egypt and the Middle East. I am very grateful to you. You are really amazing.",
+        "rate":3,
+        "img":"./img/man4.jpg",
+        "active":""
+    }
+]

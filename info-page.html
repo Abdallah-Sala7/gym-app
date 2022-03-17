@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="info.css">
+    <title>GYM</title>
+</head>
+<body>
+    <div class="info-page section">
+        <div class="container">
+            <form >
+                <input 
+                    type="file" 
+                    name="user-image" 
+                    id="" 
+                    required
+                >
+                <input 
+                    type="text"
+                    placeholder="Name" 
+                    name="user-name" 
+                    id="user-name" 
+                    required
+                >
+                <input
+                    type="email" 
+                    name="user-email" 
+                    id="user-email"
+                    placeholder="Email" 
+                    required
+                >
+                <input 
+                    type="tel" 
+                    name="user-phone" 
+                    id="user-phone"
+                    placeholder="Phone Number" 
+                    required
+                >
+                <input type="submit" class="submit" value="ok" src="index.html">
+                
+            </form>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.submit').addEventListener(('click'),(e)=>{
+            // e.preventDefault()
+        })
+
+    </script>
+</body>
+</html>

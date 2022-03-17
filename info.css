@@ -1,0 +1,63 @@
+body{
+    background-image: linear-gradient(180deg, rgba(185, 199, 209, 0.2),#fff);
+}
+.info-page{
+    color: #222;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 100%;
+    border-radius: 8px;
+    background-color: #fff;
+    padding-top: 40px;
+    box-shadow: 0 0 4px rgb(0 0 0 / 20%);
+    margin: auto;
+    align-items: center;
+}
+
+input{
+    margin-bottom: 20px;
+    outline: none;
+    width: 300px;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid rgb(0 0 0 / 30%);
+}
+
+input[type="file"] {
+    color: transparent;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    cursor: n-resize;
+    position: relative;
+}
+input[type="file"]::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    background-image: url(./img/cardio.jpg);
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+}
+.submit {
+    width: 250px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border:1px solid #d20d0d;
+    color: #d20d0d;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
