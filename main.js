@@ -13,6 +13,15 @@ let headerLi = document.querySelectorAll('.header .container ul li'),
     // aboutToTop = window.pageYOffset + aboutSection.getBoundingClientRect().top
 
 
+window.addEventListener('load',()=>{
+    var loading = document.querySelector('.loading')
+    document.querySelector("body").style.overflow = "hidden"
+
+    setTimeout(() => {
+        loading.style.display = "none"
+        document.querySelector("body").style.overflow = "auto"
+    }, 1500);
+})
 window.addEventListener('scroll',()=>{
     window.scrollY > 100 ? navHeader.classList.add('active'): navHeader.classList.remove('active');
 
