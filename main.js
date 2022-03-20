@@ -7,7 +7,8 @@ let headerLi = document.querySelectorAll('.header .container ul li'),
     activeLi = document.querySelector('ul li.active'),
     homeSection = document.querySelector('.home'),
     planSection = document.querySelector('.plan-section'),
-    aboutSection = document.querySelector('.about-section');
+    aboutSection = document.querySelector('.about-section'),
+    overLay = document.querySelector('.over-lay');
     // programToTop = window.pageYOffset + ProgramSection.getBoundingClientRect().top,
     // planToTop = window.pageYOffset + planSection.getBoundingClientRect().top,
     // aboutToTop = window.pageYOffset + aboutSection.getBoundingClientRect().top
@@ -75,9 +76,13 @@ headerLi.forEach((e)=>{
 opeenMenu.addEventListener('click',()=>{
     opeenMenu.classList.toggle('active')
     ulHeader.classList.toggle('active')
+    overLay.classList.toggle('active')
 })
-
-
+overLay.addEventListener('click',()=>{
+    opeenMenu.classList.toggle('active')
+    ulHeader.classList.toggle('active')
+    overLay.classList.toggle('active')
+})
 
 
 let trainnerInfo = document.querySelector('.trainner-info'),
